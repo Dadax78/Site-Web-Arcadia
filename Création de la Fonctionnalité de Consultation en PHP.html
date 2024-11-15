@@ -1,0 +1,31 @@
+<?php
+require 'vendor/autoload.php'; // Charge le client MongoDB, via Composer
+
+// Connexion à MongoDB
+$client = new MongoDB\Client("mongodb://localhost:27017");
+$collection = $client->zoo->consultations_animaux; // Base de données "zoo" et collection "consultations_animaux"
+
+// Récupération de l'animal via un paramètre GET
+$animal_id = $_GET['id']; // ID unique de l'animal passé dans l'URL
+
+// Recherche l'animal dans la base de données
+$animal = $collection->findOne(['animal_id' => $animal_id]);
+
+// Si l'animal existe déjà, on incrémente le compteur de consultations
+if ($animal) {
+    $collection->updateOne(
+        ['animal_id' => $animal_id],
+        ['$inc' => ['consultations' => 1]]
+    );
+} else {
+    // Si l'animal n'existe pas encore dans la collection, on l'ajoute avec une consultation initiale de 1
+    $collection->insertOne([
+        'animal_id' => $animal_id,
+        'nom' => 'Nom_de_l_animal', // Remplacez par le nom réel de l'animal
+        'consultations' => 1
+    ]);
+}
+
+echo "<h1>Page de l'animal : " . htmlspecialchars($animal['nom']) . "</h1>";
+echo "<p>Consultations : " . ($animal ? $animal['consultations'] + 1 : 1) . "</p>";
+?>

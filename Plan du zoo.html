@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Superposer un bouton sur l'image</title>
+    <style>
+        /* Conteneur pour positionner l'image et le bouton */
+        .image-container {
+            position: relative;
+            width: 1200px; /* Assurez-vous que cette taille correspond à celle de votre image */
+        }
+
+        /* Image */
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Bouton superposé */
+        .image-container .button-overlay {
+            position: absolute;
+            top: 20px; /* Ajustez la position verticale */
+            left: 20px; /* Ajustez la position horizontale */
+            padding: 10px 20px;
+            background-color: rgba(0, 123, 255, 0.8); /* Couleur semi-transparente */
+            color: #002fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Effet de survol pour le bouton */
+        .image-container .button-overlay:hover {
+            background-color: rgba(0, 123, 255, 1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Plan du Zoo</h1> : <img src="file:///C:/Users/GIGABYTE/Downloads/PLAN-BROCELIANDE-GARDENS-scaled-removebg-preview.png"width="1200" height="800">
+    
+    <!-- Bouton superposé -->
+    <button class="button-overlay">Explorer le Zoo</button>
+</div>
+
+</body>
+</html>

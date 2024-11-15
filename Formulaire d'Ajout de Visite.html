@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr"></html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Arcadia</title>
+</span>
+</div>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        @font-face {
+    font-family: 'Devant-Medium';
+    src: url('C:/Users/GIGABYTE/Documents/Devant-Medium.ttf') format('opentype');
+}
+
+body {
+    font-family: 'Devant-Medium.ttf', sans-serif;
+
+}
+
+font-size: 16px;
+{
+    }  
+     body{
+    background-color: #ffffff; 
+    color: #129700;
+} 
+<style>
+     <font-size font-size: 16px;{
+   }   
+     body{
+    background-color: #ffffff; 
+    color: #129700; 
+} 
+.image-relative {
+    position: relative;
+    left: -700px;   
+    top: 20px;    
+} 
+
+.image-relative-2 {
+    position: relative;
+    left: -140px;   
+    top: -100px;    
+} 
+
+.image-relative-3 {
+    position: relative;
+    left: -40px;   
+    top: -140px;    /
+} 
+.image-relative-4 {
+    position: relative;
+    left: -40px;   
+    top: -140px;    /
+} 
+
+iframe {
+            display: block;
+            margin: auto;
+            width: 100%;
+            height: 100vh; 
+        }
+
+body {
+            background-image: url('https://i.pinimg.com/originals/be/7b/4f/be7b4fa9a52965178e59907e709b314b.jpg');
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+        }
+
+
+        .bouton {
+    position: absolute;
+    top: 30px; 
+    left: 450px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006d00;
+    color: #157c00;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container:hover::before {
+    opacity: 1; 
+}
+.button-hover {
+    transition: transform 0.3s ease;
+}
+
+.button-hover:hover {
+    transform: scale(1.1);
+}
+
+
+.bouton-2 {
+    position: absolute;
+    top: 30px; 
+    left:650px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006d00;
+    color: #157c00;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container-2:hover::before {
+    opacity: 1; 
+}
+.button-hover-2 {
+    transition: transform 0.3s ease;
+}
+
+.button-hover-2.hover: {
+    transform: scale(1.1);
+}
+
+
+.bouton-3 {
+    position: absolute;
+    top: 30px; 
+    left:1500px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006d00;
+    color: #157c00;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container-2:hover::before {
+    opacity: 1; 
+}
+.button-hover{
+    transition: transform 0.3s ease;
+}
+
+.button-hover.hover: {
+    transform: scale(1.1);
+}
+
+.bouton-4 {
+    position: absolute;
+    top: 30px; 
+    left:620px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006d00;
+    color: #157c00;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container:hover::before {
+    opacity: 1; 
+}
+.button-hover{
+    transition: transform 0.3s ease;
+}
+
+.button-hover.hover: {
+    transform: scale(1.1);
+}
+
+.bouton-5 {
+    position: absolute;
+    top: 30px; 
+    left:798px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006d00;
+    color: #157c00;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container:hover::before {
+    opacity: 1; 
+}
+.button-hover{
+    transition: transform 0.3s ease;
+}
+
+.button-hover.hover: {
+    transform: scale(1.1);
+}
+
+
+.bouton-6 {
+    position: absolute;
+    top: 30px; 
+    left: 1100px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006d00;
+    color: #157c00;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container:hover::before {
+    opacity: 1; 
+}
+.button-hover{
+    transition: transform 0.3s ease;
+}
+
+.button-hover.hover: {
+    transform: scale(1.1);
+}
+</style>
+
+
+
+<?php
+session_start();
+
+// Vérification de la connexion
+if (!isset($_SESSION['user_id'])) {
+    header('Location: login.php');
+    exit;
+}
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Ici, vous pouvez gérer l'ajout de visite à la base de données
+    // Pour cet exemple, nous allons juste simuler l'ajout de la visite.
+    $animal_id = $_POST['animal_id'];
+    $date_passage = $_POST['date_passage'];
+    $etat = $_POST['etat'];
+    $notes = $_POST['notes'];
+
+    // Simulez l'ajout dans la base de données
+    echo "<p>Visite ajoutée avec succès pour l'animal ID: $animal_id</p>";
+    echo "<p>Date: $date_passage, État: $etat, Notes: $notes</p>";
+}
+?>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter Visite</title>
+</head>
+<body>
+    <h1>Ajouter Visite</h1>
+    <form method="post">
+        <input type="hidden" name="animal_id" value="<?php echo htmlspecialchars($_GET['id']); ?>">
+        <label>Date de passage:</label>
+        <input type="date" name="date_passage" required>
+        <label>État:</label>
+        <input type="text" name="etat" required>
+        <label>Notes:</label>
+        <textarea name="notes" required></textarea>
+        <button type="submit">Ajouter la visite</button>
+    </form>
+    <a href="espace_veterinaire.php">Retour à l'espace vétérinaire</a>
+</body>
+</html>

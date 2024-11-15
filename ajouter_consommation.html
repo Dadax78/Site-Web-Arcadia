@@ -1,0 +1,24 @@
+<?php
+session_start();
+require 'db.php';
+
+if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'employe') {
+    header('Location: login.php');
+    exit;
+}
+
+// Récupérer les données du formulaire
+$animal_id = $_POST['animal_id'];
+$date_consommation = $_POST['date_consommation'];
+$heure_consommation = $_POST['heure_consommation'];
+$type_nourriture = $_POST['type_nourriture'];
+$quantite = $_POST['quantite'];
+
+// Insertion dans la base de données
+$sql = "INSERT INTO consommations (animal_id, date_consommation, heure_consommation, type_nourriture, quantite) VALUES (?, ?, ?, ?, ?)";
+$stmt = $pdo->prepare($sql);
+$stmt->execute([$animal_id, $date_consommation, $heure_consommation, $type_nourriture, $quantite]);
+
+header('Location: espace_employe.php');
+exit;
+?>

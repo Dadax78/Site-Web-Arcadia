@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Arcadia</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        @font-face {
+            font-family: 'Devant-Medium';
+            src: url('C:/Users/GIGABYTE/Documents/Devant-Medium.ttf') format('opentype');
+        }
+
+        body {
+            font-family: 'Devant-Medium', sans-serif;
+            background-color: #ffffff; 
+            color: #000000;
+            background-image: url('https://i.pinimg.com/originals/be/7b/4f/be7b4fa9a52965178e59907e709b314b.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-size: 16px;
+        }
+        
+        /* Styles pour les images, boutons, et autres éléments */
+        .image-ronde {
+            width: 300px; 
+            height: 300px; 
+            border-radius: 50%; 
+            object-fit: cover;
+        }
+
+        .button-hover {
+            transition: transform 0.3s ease;
+        }
+
+        .button-hover:hover {
+            transform: scale(1.1);
+        }
+
+        .bouton {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #006d00;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h1>Découvrez nos animaux</h1>
+    <h1>Plus de 100 espèces à découvrir</h1>
+    <h3>La Savane :</h3>
+    <!-- Exemple d'animal avec compteur de vues -->
+    <div class="animal">
+        <a href="Page_presentation_lion_Afrique.html" style="text-decoration: none;">
+            <button class="button-hover" onclick="incrementView('view-count-lion')">
+                <p id="view-count-lion">Nombre de vues : 0</p>
+                <h3>Médor le Lion d'Afrique</h3>
+                <img src="https://4.bp.blogspot.com/-xJxeP-SiSSQ/UWk0iUK-SUI/AAAAAAAAAFs/XeF6ccjodcQ/s1600/Lion-King-Of-Jungle.jpg" class="image-ronde" width="500" height="500">
+                <a href="Page présentation lion d'Afrique.html" style="color: rgb(21, 255, 0)"class="lien">Voir l'animal</a>
+            </button>
+        </a>
+    </div>
+
+
+   
+    <div class="animal">
+        <a href="Page_presentation_Elephant_Afrique.html" style="text-decoration: none;">
+            <button class="button-hover" onclick="incrementView('view-count-elephant')">
+                <p id="view-count-elephant">Nombre de vues : 0</p>
+                <h3>Rebus l'Éléphant d'Afrique Centrale</h3>
+                <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA11Kry0.img" class="image-ronde" width="500" height="500">
+                <a href="Présentation 2lephant d'Afrique Centrale.html" style="color: rgb(21, 255, 0)"class="lien">Voir l'animal</a>
+            </button>
+        </a>
+    </div>
+    
+
+    <div class="animal">
+        <button class="button-hover" onclick="incrementView('view-count-gnou')">
+            <p id="view-count-gnou">Nombre de vues : 0</p>
+            <h3>Zoulou le Gnou</h3>
+            <img src="https://tse2.mm.bing.net/th?id=OIP.IxJwxvhe7PxtYUfRumIZPAHaE7&pid=Api&P=0&h=180" class="image-ronde" width="500" height="500">
+            <a href="Présentation Gnou.html" style="color: rgb(21, 255, 0)"class="lien">Voir l'animal</a>
+        </button>
+    </div>
+    
+    <div class="animal">
+        <button class="button-hover" onclick="incrementView('view-count-tigre')">
+        <p id="view-count-tigre">Nombre de vues : 0</p>
+<h3>Gérard le Tigre<h3>  
+<img src ="https://www.xtrafondos.com/wallpapers/tigre-siberiano-10593.jpg"class="image-ronde"width="500" height="500">
+<a href="Présentation tigre .html" style="color: rgb(21, 255, 0)"class="lien">Voir l'animal</a>
+</button>
+</div>
+
+
+<h1>La Jungle :</h1>
+
+<!-- Petit Singe Noir et Blanc -->
+<div class="animal">
+    <button class="button-hover" onclick="incrementview('view-count-petit-singe')">
+        <p id="view-count-petit-singe">Nombre de vues : 0</p>
+        <h3>Piti Le Petit Singe Noir et Blanc</h3>
+        <img src="https://images5.alphacoders.com/333/333264.jpg" class="image-ronde" width="200" height="200">
+        <a href="Présentation du Petit Singe Noir.html" style="color: rgb(21, 255, 0);" class="lien">Le Petit Singe Noir et Blanc</a>
+    </button>
+</div>
+
+<!-- Serpent Vert -->
+<div class="animal">
+    <button class="button-hover" onclick="incrementview('view-count-serpent-vert')">
+        <p id="view-count-serpent-vert">Nombre de vues : 0</p>
+        <h3>Python le Serpent Vert</h3>
+        <img src="https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/8/4/e/84eb02acff_50153957_ahaetulla-prasina-serpent-liane.jpg" class="image-ronde" width="200" height="200">
+        <a href="Prséentation Serpent vert.html" style="color: rgb(21, 255, 0);" class="lien">Serpent Vert</a>
+    </button>
+</div>
+
+<!-- Léopard -->
+<div class="animal">
+    <button class="button-hover" onclick="incrementview('view-count-leopard')">
+        <p id="view-count-leopard">Nombre de vues : 0</p>
+        <h3>Leo le Léopard</h3>
+        <img src="https://zoodessables.fr/wp-content/uploads/2015/07/Panthere-de-lAmour-Demitri-SSilhol-Zoo-des-Sables2.jpg" class="image-ronde" width="200" height="200">
+        <a href="Présentation léopard.html" style="color: rgb(21, 255, 0);" class="lien">Léopard</a>
+    </button>
+</div>
+
+<h2>La Ferme :</h2>
+
+<!-- Chèvre -->
+<div class="animal">
+    <button class="button-hover" onclick="incrementview('view-count-chevre')">
+        <p id="view-count-chevre">Nombre de vues : 0</p>
+        <h3>Chinta la Chèvre brune</h3>
+        <img src="file:///C:/Users/GIGABYTE/Pictures/ouv-chevre-ch120608-060-1435746972.jpg" class="image-ronde" width="200" height="200">
+        <a href="Présentation Chèvre.html" style="color: rgb(21, 255, 0);" class="lien">Chèvre</a>
+    </button>
+</div>
+
+<!-- Coq -->
+<div class="animal">
+    <button class="button-hover" onclick="incrementview('view-count-coq')">
+        <p id="view-count-coq">Nombre de vues : 0</p>
+        <h3>Coco le Coq</h3>
+        <img src="https://static.wixstatic.com/media/8fa7cb_c9ebf7262fea4ffa87aa0147af01bfda~mv2.jpg/v1/fill/w_1000,h_1000,al_c,q_85,usm_0.66_1.00_0.01/8fa7cb_c9ebf7262fea4ffa87aa0147af01bfda~mv2.jpg" class="image-ronde" width="200" height="200">
+        <a href="Présentation du Coq.html" style="color: rgb(21, 255, 0);" class="lien">Coq</a>
+    </button>
+</div>
+
+<!-- Vache -->
+<div class="animal">
+    <button class="button-hover" onclick="incrementview('view-count-vache')">
+        <p id="view-count-vache">Nombre de vues : 0</p>
+        <h3>Vita la Vache</h3>
+        <img src="http://upload.wikimedia.org/wikipedia/commons/8/84/Vache_Montb%C3%A9liarde.jpg" class="image-ronde" width="200" height="200">
+        <a href="Présentation de la Vache.html" style="color: rgb(21, 255, 0);" class="lien">Vache</a>
+    </button>
+</div>
+
+<!-- Mouton -->
+<div class="animal">
+    <button class="button-hover" onclick="incrementview('view-count-mouton')">
+        <p id="view-count-mouton">Nombre de vues : 0</p>
+        <h3>Momo le Mouton</h3>
+        <img src="https://tse3.mm.bing.net/th?id=OIP._gvAjBt1lcBd4LSBtq4BiAHaFN&pid=Api&P=0&h=180" class="image-ronde" width="200" height="200">
+        <a href="Présentation du Mouton 2.html" style="color: rgb(21, 255, 0);" class="lien">Mouton</a>
+    </button>
+</div>
+
+<h1>Les Marais :</h1>
+
+<!-- Canard Vert -->
+<div class="animal">
+    <button class="button-hover" onclick="incrementview('view-count-canard-vert')">
+        <p id="view-count-canard-vert">Nombre de vues : 0</p>
+        <h3>Cader le Canard vert</h3>
+        <img src="https://www.fermedebeaumont.com/31592-very_large_default/canard-colvert-mullard-anas-platyrhynchos-canard-cane-de-race-vente-elevage.jpg" class="image-ronde" width="200" height="200">
+        <a href="Canard Vert.html" style="color: rgb(21, 255, 0);" class="lien">Canard Vert</a>
+    </button>
+</div>
+
+<!-- Canard Blanc -->
+<div class="animal">
+    <button class="button-hover" onclick="incrementview('view-count-canard-blanc')">
+        <p id="view-count-canard-blanc">Nombre de vues : 0</p>
+        <h3>Cancan le Canard blanc</h3>
+        <img src="https://static.fermedebeaumont.com/images/canards-a-vendre/oie/oie-normande-jar-male-femelle-couvaison-elevage.jpg" class="image-ronde" width="200" height="200">
+        <a href="Présentation Canard Blanc.html" style="color: rgb(21, 255, 0);" class="lien">Canard Blanc</a>
+    </button>
+</div>
+
+<!-- Tortue Aquatique -->
+<div class="animal">
+    <button class="button-hover" onclick="incrementview('view-count-tortue')">
+        <p id="view-count-tortue">Nombre de vues : 0</p>
+        <h3>Torie la Tortue Aquatique</h3>
+        <img src="https://www.techno-science.net/illustration/Definition/inconnu/c/Chelonia-mydas--28Hawaiian-variety-29.jpg" class="image-ronde" width="200" height="200">
+        <a href="Présentation Tortue Aquatique.html" style="color: rgb(21, 255, 0);" class="lien">Tortue Aquatique</a>
+    </button>
+</div>
+
+<h1>Les Aquatiques :</h1>
+
+<!-- Baleine -->
+<div class="animal">
+    <button class="button-hover" onclick="incrementview('view-count-baleine')">
+        <p id="view-count-baleine">Nombre de vues : 0</p>
+        <h3>Balie la Baleine</h3>
+        <img src="https://iles-et-adventure.com/images/baleine-a-bosse-albinos.gif" class="image-ronde" width="200" height="200">
+        <a href="Présentation de la baleine .html" style="color: rgb(21, 255, 0);" class="lien">Baleine</a>
+    </button>
+</div>
+
+<!-- Dauphin -->
+<div class="animal">
+    <button class="button-hover" onclick="incrementview('view-count-dauphin')">
+        <p id="view-count-dauphin">Nombre de vues : 0</p>
+        <h3>Daril le Dauphin</h3>
+        <img src="http://static.pratique.fr/images/unsized/da/dauphin8-0.jpg" class="image-ronde" width="200" height="200">
+        <a href="Présentation Dauphin.html" style="color: rgb(21, 255, 0);" class="lien">Dauphin</a>
+    </button>
+</div>
+
+<!-- Pingouin -->
+<div class="animal">
+    <button class="button-hover" onclick="incrementview('view-count-pingouin')">
+        <p id="view-count-pingouin">Nombre de vues : 0</p>
+        <h3>Pingot le Pingouin Aquatique (ou Manchot)</h3>
+        <img src="https://i.ytimg.com/vi/m3SIp6phPls/maxresdefault.jpg" class="image-ronde" width="200" height="200">
+        <a href="Présentation Pingouin Aquatique.html" style="color: rgb(21, 255, 0);" class="lien">Pingouin Aquatique</a>
+    </button>
+</div>
+
+
+<h2>Visite des Habitats</h2>
+<label>Choisir un Habitat :</label>
+        <select name="habitat" required>
+            <option value="">-- Sélectionnez un habitat --</option>
+            <option value="forêt">Forêt</option>
+            <option value="savane">Savane</option>
+            <option value="océan">Océan</option>
+            <option value="désert">Désert</option>
+            <option value="montagne">Montagne</option>
+            <!-- Ajoutez d'autres habitats si nécessaire -->
+        </select>
+
+        <label>Souhaitez-vous un guide gratuit ?</label>
+        <input type="checkbox" name="guide_gratuit" value="oui"> Oui, j'aimerais un guide gratuit.
+
+        <button type="submit">Enregistrer</button>
+    </form>
+</body>
+
+  
+
+
+    <!-- Autres éléments HTML peuvent suivre le même modèle -->
+    
+    <!-- Section pour le formulaire de réservation -->
+    <section>
+        <h2>Réservez votre Place pour le Petit Train</h2>
+        <form method="post" action="traitement_reservation.php">
+            <label>Nom :</label>
+            <input type="text" name="nom" required>
+            <label>Prénom :</label>
+            <input type="text" name="prenom" required>
+            <label>Date de la Visite :</label>
+            <input type="date" name="date_visite" required>
+            <label>Nombre de Billets :</label>
+            <input type="number" name="nombre_billets" min="1" value="1" required>
+            <button type="submit">Réserver</button>
+        </form>
+    </section>
+
+    <script src="Script_1.js"></script>
+    <script src="Script-2.js"></script>
+</body>
+</html>

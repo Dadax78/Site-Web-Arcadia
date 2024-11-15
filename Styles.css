@@ -1,0 +1,44 @@
+<style>
+        @font-face {
+            font-family: 'Devant-Medium';
+            src: url('C:/Users/GIGABYTE/Documents/Devant-Medium.ttf') format('opentype');
+        }
+
+        body {
+            font-family: 'Devant-Medium', sans-serif;
+            background-color: #ffffff; 
+            color: #000000;
+            background-image: url('https://i.pinimg.com/originals/be/7b/4f/be7b4fa9a52965178e59907e709b314b.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-size: 16px;
+        }
+        
+        /* Styles pour les images, boutons, et autres éléments */
+        .image-ronde {
+            width: 300px; 
+            height: 300px; 
+            border-radius: 50%; 
+            object-fit: cover;
+        }
+
+        .button-hover {
+            transition: transform 0.3s ease;
+        }
+
+        .button-hover:hover {
+            transform: scale(1.1);
+        }
+
+        .bouton {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #006d00;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            position: absolute;
+        }
+    </style>

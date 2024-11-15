@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturation et Paiement</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers un fichier CSS pour le style -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .payment-method {
+            margin-bottom: 20px;
+        }
+        .summary {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Informations de Facturation</h2>
+    <form id="billing-form">
+        <div class="form-group">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Adresse :</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        <div class="form-group">
+            <label for="zipcode">Code Postal :</label>
+            <input type="text" id="zipcode" name="zipcode" required>
+        </div>
+        <div class="form-group">
+            <label for="city">Ville :</label>
+            <input type="text" id="city" name="city" required>
+        </div>
+        <div class="form-group">
+            <label for="country">Pays :</label>
+            <select id="country" name="country" required>
+                <option value="">Sélectionnez un pays</option>
+                <option value="france">France</option>
+                <option value="belgique">Belgique</option>
+                <option value="suisse">Suisse</option>
+                <!-- Ajoutez d'autres pays ici -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="phone">Numéro de Téléphone :</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <h2>Mode de Paiement</h2>
+        <div class="payment-method">
+            <input type="radio" id="credit-card" name="payment-method" value="credit-card" required>
+            <label for="credit-card">Carte de Crédit</label>
+            <div class="form-group">
+                <label for="card-number">Numéro de Carte :</label>
+                <input type="text" id="card-number" name="card-number" required>
+            </div>
+            <div class="form-group">
+                <label for="expiry-date">Date d'Expiration :</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/AA" required>
+            </div>
+            <div class="form-group">
+                <label for="security-code">Code de Sécurité :</label>
+                <input type="text" id="security-code" name="security-code" required>
+            </div>
+        </div>
+
+        <div class="payment-method">
+            <input type="radio" id="paypal" name="payment-method" value="paypal">
+            <label for="paypal">PayPal</label>
+            <div class="form-group">
+                <label for="paypal-email">Adresse e-mail PayPal :</label>
+                <input type="email" id="paypal-email" name="paypal-email">
+            </div>
+        </div>
+
+        <div class="payment-method">
+            <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer">
+            <label for="bank-transfer">Virement Bancaire</label>
+            <div class="form-group">
+                <label for="account-details">Détails du Compte :</label>
+                <input type="text" id="account-details" name="account-details">
+            </div>
+        </div>
+
+        <h2>Résumé de la Commande</h2>
+        <div class="summary">
+            <p>Prix billet - 10,00 €</p>
+            <p><strong>Total : 10,00 €</strong></p>
+        </div>
+
+        <button type="submit" class="btn">Confirmer le Paiement</button>
+    </form>
+
+</body>
+</html>

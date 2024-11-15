@@ -1,0 +1,25 @@
+<?php
+session_start();
+
+// Vérification de la connexion
+if (!isset($_SESSION['user_id'])) {
+    header('Location: login.php');
+    exit;
+}
+
+// Simuler un ajout de visite (sans formulaire pour simplifier)
+$animal_id = $_GET['id'];
+?>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter Visite</title>
+</head>
+<body>
+    <h1>Ajouter Visite pour Animal ID: <?php echo htmlspecialchars($animal_id); ?></h1>
+    <p>Visite ajoutée avec succès!</p>
+    <a href="espace_veterinaire.php">Retour à l'espace vétérinaire</a>
+</body>
+</html>

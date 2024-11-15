@@ -1,0 +1,63 @@
+<?php
+session_start();
+
+// Vérification de la connexion
+if (!isset($_SESSION['user_id'])) {
+    header('Location: login.php');
+    exit;
+}
+
+// Vérification de l'ID de l'animal
+if (!isset($_GET['id'])) {
+    echo "Aucun animal spécifié.";
+    exit;
+}
+
+// Récupérer l'ID de l'animal
+$animal_id = $_GET['id'];
+
+// Traitement du formulaire lors de la soumission
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Récupérer les données du formulaire
+    $date_passage = $_POST['date_passage'];
+    $etat = $_POST['etat'];
+    $notes = $_POST['notes'];
+    $grammage = $_POST['grammage']; // Récupérer le grammage
+
+    // Simulation de l'ajout de la visite (normalement, vous ajouteriez cela à la base de données)
+    echo "<h3>Visite ajoutée avec succès pour l'animal: " . htmlspecialchars($animal_id) . "</h3>";
+    echo "<p>Date de passage: " . htmlspecialchars($date_passage) . "</p>";
+    echo "<p>État: " . htmlspecialchars($etat) . "</p>";
+    echo "<p>Grammage: " . htmlspecialchars($grammage) . "</p>"; // Afficher le grammage
+    echo "<p>Notes: " . nl2br(htmlspecialchars($notes)) . "</p>";
+} else {
+    // Affichage du formulaire
+?>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter Visite pour l'Animal ID: <?php echo htmlspecialchars($animal_id); ?></title>
+</head>
+<body>
+    <h1>Ajouter une Visite pour l'Animal ID: <?php echo htmlspecialchars($animal_id); ?></h1>
+    <form method="post">
+        <input type="hidden" name="animal_id" value="<?php echo htmlspecialchars($animal_id); ?>">
+        <label>Date de passage:</label>
+        <input type="date" name="date_passage" required>
+        <label>État:</label>
+        <input type="text" name="etat" required>
+        <label>Grammage:</label>
+        <input type="text" name="grammage" required> <!-- Champ de saisie pour le grammage -->
+        <label>Notes:</label>
+        <textarea name="notes" required></textarea>
+        <button type="submit">Ajouter la visite</button>
+    </form>
+    <a href="page espace vétérinaire.html">Retour à l'espace vétérinaire</a>
+</body>
+</html>
+
+<?php
+} // Fin du else pour afficher le formulaire
+?>

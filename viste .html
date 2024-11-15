@@ -1,0 +1,56 @@
+<?php
+$host = 'localhost';
+$db = 'zoo';
+$user = 'root'; // Remplacez par votre nom d'utilisateur de base de données
+$pass = ''; // Remplacez par votre mot de passe de base de données
+$charset = 'utf8mb4';
+
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+$options = [
+    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    PDO::ATTR_EMULATE_PREPARES   => false,
+];
+
+try {
+    $pdo = new PDO($dsn, $user, $pass, $options);
+} catch (\PDOException $e) {
+    throw new \PDOException($e->getMessage(), (int)$e->getCode());
+}
+?>
+
+<?php
+<?php
+session_start();
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Simuler un utilisateur vétérinaire
+    $nom_utilisateur = $_POST['nom_utilisateur'];
+    $mot_de_passe = $_POST['mot_de_passe'];
+
+    if ($nom_utilisateur === 'veterinaire' && $mot_de_passe === 'motdepasse') {
+        $_SESSION['user_id'] = 1; // Utilisateur fictif
+        header('Location: espace_veterinaire.php');
+        exit;
+    } else {
+        $erreur = "Nom d'utilisateur ou mot de passe incorrect.";
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion Vétérinaire</title>
+</head>
+<body>
+    <h1>Connexion Vétérinaire</h1>
+    <form method="post">
+        <input type="text" name="nom_utilisateur" placeholder="Nom d'utilisateur" required>
+        <input type="password" name="mot_de_passe" placeholder="Mot de passe" required>
+        <button type="submit">Se connecter</button>
+    </form>
+    <?php if (isset($erreur)) echo "<p>$erreur</p>"; ?>
+</body>
+</html>

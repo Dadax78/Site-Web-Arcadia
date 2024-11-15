@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Arcadia</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        @font-face {
+            font-family: 'Devant-Medium';
+            src: url('C:/Users/GIGABYTE/Documents/Devant-Medium.ttf') format('opentype');
+        }
+
+        body {
+            font-family: 'Devant-Medium', sans-serif;
+            background-image: url('https://i.pinimg.com/originals/be/7b/4f/be7b4fa9a52965178e59907e709b314b.jpg');
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+            color: #ffffff; /* Change le texte en blanc pour le contraste */
+        }
+
+        h1, h2, h3, p {
+            color: #ffffff; /* Assurez-vous que les titres et le texte sont en blanc */
+        }
+
+        .bouton {
+            position: absolute;
+            top: 30px; 
+            left: 450px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #006d00;
+            color: #157c00;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .button-hover {
+            transition: transform 0.3s ease;
+        }
+
+        .button-hover:hover {
+            transform: scale(1.1);
+        }
+
+        img {
+            max-width: 100%; /* Ajuste les images à la largeur de leur conteneur */
+            height: auto; /* Maintient le ratio des images */
+        }
+
+        /* Les styles des autres boutons peuvent être consolidés ici pour éviter la répétition */
+        .bouton-2, .bouton-3, .bouton-4, .bouton-5, .bouton-6 {
+            position: absolute;
+            top: 30px; 
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #006d00;
+            color: #157c00;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Ajuster les positions de chaque bouton ici */
+        .bouton-2 { left: 650px; }
+        .bouton-3 { left: 1500px; }
+        .bouton-4 { left: 620px; }
+        .bouton-5 { left: 798px; }
+        .bouton-6 { left: 1100px; }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            color: #ddd;
+        }
+
+        .bouton-11 {
+    position: absolute;
+    top: 30px; 
+    left: 1550px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006d00;
+    color: #157c00;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container:hover::before {
+    opacity: 1; 
+}
+.button-hover{
+    transition: transform 0.3s ease;
+}
+
+.button-hover.hover: {
+    transform: scale(1.1);
+}
+
+
+h1 {
+      font-size: 50px;
+      text-align: center;
+    }
+
+    </style>
+</head>
+<body>
+
+<section>
+    <h2>Restauration</h2>
+    <p>Notre zoo propose plusieurs options de restauration pour les visiteurs. Que vous souhaitiez un repas rapide ou un repas assis, nous avons ce qu'il vous faut.</p>
+    
+    <h3>Options de Restauration :</h3>
+    <ul>
+        <li><strong>Café du Zoo :</strong> Snacks, boissons et pâtisseries.</li>
+        <li><strong>Restaurant Savane :</strong> Cuisine locale avec vue sur la savane.</li>
+        <li><strong>Food Truck Écolo :</strong> Options végétariennes et bio.</li>
+    </ul>
+    
+    <h3>Plan de Restauration :</h3>
+    <p>Consultez le plan ci-dessous pour localiser nos points de restauration dans le zoo :</p>
+    <img src="file:///C:/Users/GIGABYTE/Downloads/bfec8051527875e880ae1ef6c79b294a-removebg-preview-Photoroom.png"  width="1200" height="1200" alt="Plan de Restauration">
+
+    <h3>Réservez Votre Table :</h3>
+    <form method="post" action="traitement_reservation_restauration.php">
+        <label>Nom :</label>
+        <input type="text" name="nom_restauration" required>
+
+        <label>Date de Réservation :</label>
+        <input type="date" name="date_reservation" required>
+
+        <label>Heure de Réservation :</label>
+        <input type="time" name="heure_reservation" required>
+
+        <label>Nombre de Personnes :</label>
+        <input type="number" name="nombre_personnes" min="1" value="1" required>
+
+        <button type="submit">Réserver une Table</button>
+    </form>
+</section>
+
+<h1>Café du ZOO</h1>
+<img src="https://pawinterest.com/wp-content/uploads/2018/12/zoo-cafe-budapest-hungary-google-search-15449899354pc8l.jpg" alt="Café du Zoo">
+
+<h1>Restaurant Savane</h1>
+<img src="https://www.labelcommunication.net/wordpress/wp-content/uploads/2017/08/enseigne-menus-et-flyer-pour-le-restaurant-la-savane-express-creations-destinees-a-un-public-familial-avec-des-illustrations-danimaux-pour-plaire-aux-enfants-f09f90af-1030x694.jpg" alt="Restaurant Savane">
+<img src="https://www.zooantwerpen.be/images/media-grid-2x/restaurant-savanne-zoo-antwerpen-jonas-verhulst-13062016-15.jpg" alt="Restaurant Savane Zoo Antwerpen">
+
+
+<h1>Foodtruck Ecolo</h1>
+<img src="https://tmv.tmvtours.fr/wp-content/uploads/2020/01/camion-1200x1014.jpg">
+
+
+<button class="bouton-11 button-hover">
+    <a href="MEnu du zoo.html" style="color: rgb(255, 255, 255);" class="lien">Menu</a></button></div>
+</body>
+</html>
+

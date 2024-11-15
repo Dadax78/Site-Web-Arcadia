@@ -1,0 +1,373 @@
+<style>
+        @font-face {
+    font-family: 'Devant-Medium';
+    src: url('C:/Users/GIGABYTE/Documents/Devant-Medium.ttf') format('opentype');
+}
+
+body {
+    font-family: 'Devant-Medium.ttf', sans-serif;
+
+}
+
+font-size: 60px;
+{
+    }  
+     body{
+    background-color: #ffffff; 
+    color: #fbff00;
+} 
+<style>
+     <font-size font-size: 60px;{
+   }   
+     body{
+    background-color: #ffffff; 
+    color: #fab700; 
+} 
+.image-relative {
+    position: relative;
+    left: -700px;   
+    top: 20px;    
+} 
+
+.image-relative-2 {
+    position: relative;
+    left: -140px;   
+    top: -100px;    
+} 
+
+.image-relative-3 {
+    position: relative;
+    left: 100px;   
+    top: 140px;    /
+} 
+.image-relative-4 {
+    position: relative;
+    left: -40px;   
+    top: -140px;    /
+} 
+
+iframe {
+            display: block;
+            margin: auto;
+            width: 100%;
+            height: 100vh; 
+        }
+
+body {
+            background-image: url('https://i.pinimg.com/originals/be/7b/4f/be7b4fa9a52965178e59907e709b314b.jpg');
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+        }
+
+
+        .bouton {
+    position: absolute;
+    top: 30px; 
+    left: 250px;
+    style="font-family: 'Devant-Medium.ttf', Arial, sans-serif;">
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006d00;
+    color: #157c00;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container:hover::before {
+    opacity: 1; 
+}
+.button-hover {
+    transition: transform 0.3s ease;
+}
+
+.button-hover:hover {
+    transform: scale(1.1);
+}
+
+
+.bouton-2 {
+    position: absolute;
+    top: 30px; 
+    left:350px;
+
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006d00;
+    color: #157c00;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container-2:hover::before {
+    opacity: 1; 
+}
+.button-hover-2 {
+    transition: transform 0.3s ease;
+}
+
+.button-hover-2.hover: {
+    transform: scale(1.1);
+}
+
+
+.bouton-3 {
+    position: absolute;
+    top: 30px; 
+    left: 1670px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006d00;
+    color: #157c00;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container-2:hover::before {
+    opacity: 1; 
+}
+.button-hover{
+    transition: transform 0.3s ease;
+}
+
+.button-hover.hover: {
+    transform: scale(1.1);
+}
+
+.bouton-4 {
+    position: absolute;
+    top: 30px; 
+    left:400px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006d00;
+    color: #157c00;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container:hover::before {
+    opacity: 1; 
+}
+.button-hover{
+    transition: transform 0.3s ease;
+}
+
+.button-hover.hover: {
+    transform: scale(1.1);
+}
+
+.bouton-5 {
+    position: absolute;
+    top: 30px; 
+    left:798px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006d00;
+    color: #157c00;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container:hover::before {
+    opacity: 1; 
+}
+.button-hover{
+    transition: transform 0.3s ease;
+}
+
+.button-hover.hover: {
+    transform: scale(1.1);
+}
+
+
+.bouton-6 {
+    position: absolute;
+    top: 30px; 
+    left: 1000px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006d00;
+    color: #157c00;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container:hover::before {
+    opacity: 1; 
+}
+.button-hover{
+    transition: transform 0.3s ease;
+}
+
+.button-hover.hover: {
+    transform: scale(1.1);
+}
+
+
+.bouton-7 {
+    position: absolute;
+    top: 30px; 
+    left: 1340px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006d00;
+    color: #157c00;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container:hover::before {
+    opacity: 1; 
+}
+.button-hover{
+    transition: transform 0.3s ease;
+}
+
+.button-hover.hover: {
+    transform: scale(1.1);
+}
+
+
+.bouton-8 {
+    position: absolute;
+    top: 30px; 
+    left: 570px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006d00;
+    color: #157c00;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container:hover::before {
+    opacity: 1; 
+}
+.button-hover{
+    transition: transform 0.3s ease;
+}
+
+.button-hover.hover: {
+    transform: scale(1.1);
+}
+
+
+
+.bouton-9 {
+    position: absolute;
+    top: 30px; 
+    left: 790px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006d00;
+    color: #157c00;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container:hover::before {
+    opacity: 1; 
+}
+.button-hover{
+    transition: transform 0.3s ease;
+}
+
+.button-hover.hover: {
+    transform: scale(1.1);
+}
+
+
+.bouton-10 {
+    position: absolute;
+    top: 30px; 
+    left: 1190px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006d00;
+    color: #157c00;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container:hover::before {
+    opacity: 1; 
+}
+.button-hover{
+    transition: transform 0.3s ease;
+}
+
+.button-hover.hover: {
+    transform: scale(1.1);
+}
+
+
+h1 {
+      font-size: 50px;
+      text-align: center;
+    }
+
+
+    .bouton-11 {
+    position: absolute;
+    top: 30px; 
+    left: 1520px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006d00;
+    color: #157c00;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container:hover::before {
+    opacity: 1; 
+}
+.button-hover{
+    transition: transform 0.3s ease;
+}
+
+.button-hover.hover: {
+    transform: scale(1.1);
+}
+
+
+h1 {
+      font-size: 50px;
+      text-align: center;
+    }
+
+    .image-positionee {
+    position: absolute;
+    top: 100px; 
+    left: 100px
+    font-family: 'Devant-Medium.ttf', Arial, sans-serif;">
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006d00;
+    color: #157c00;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+
+}
+.image-relative-3 {
+ ; /* Permet à l'image de rester en place même en défilant */
+    bottom:300px; /* Positionne l'image en bas */
+    right: 15000px; /* Positionne l'image à droite */
+}
+.bouton-12 {
+    position: absolute;
+    top: 30px; 
+    left: 800px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006d00;
+    color: #157c00;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+</style>
+

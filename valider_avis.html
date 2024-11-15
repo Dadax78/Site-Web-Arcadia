@@ -1,0 +1,23 @@
+<?php
+session_start();
+require 'db.php';
+
+if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'employe') {
+    header('Location: login.php');
+    exit;
+}
+
+// Vérification de l'action et de l'ID de l'avis
+$avis_id = $_GET['id'];
+$action = $_GET['action'];
+
+// Mise à jour de l'état de l'avis
+if ($action === 'valider') {
+    $pdo->query("UPDATE avis SET valide = 1 WHERE id = $avis_id");
+} elseif ($action === 'invalider') {
+    $pdo->query("UPDATE avis SET valide = 0 WHERE id = $avis_id");
+}
+
+header('Location: espace_employe.php');
+exit;
+?>
